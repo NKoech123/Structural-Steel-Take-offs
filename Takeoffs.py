@@ -23,7 +23,7 @@ df=df.drop(columns='Canopy')
 Vendor_CSV=df.groupby(by=[ "Material_Spec","Dimensions"]).sum()
 
 #Convert to excel; Ready to send to Vendors; File saved in indicated directory
-Vendor_CSV.to_excel (r'C:\Users\nkoech\OneDrive - Shimmick\Desktop\Vendor.xlsx', index = True, header=True)
+Vendor_CSV.to_excel (r'C:\Users\nkoech\Desktop\Vendor.xlsx', index = True, header=True)
 
 #Time to RFQs
 Dim=df.iloc[:,1] 
